@@ -1,0 +1,9 @@
+[package]
+name = "scarlet"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+winapi = { version = "0.3", features = ["tlhelp32", "winbase", "wininet", "processthreadsapi", "handleapi", "memoryapi", "psapi", "synchapi", "winuser", "libloaderapi", "errhandlingapi", "processenv"] }
+
+

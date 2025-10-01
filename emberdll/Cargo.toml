@@ -1,0 +1,25 @@
+[package]
+name = "emberdll"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "emberdll"
+crate-type = ["cdylib"]
+
+[dependencies]
+winapi = { version = "0.3.9", features = [
+    "winuser",
+    "libloaderapi",
+    "memoryapi",
+    "winsock2",
+    "ws2tcpip",
+    "processthreadsapi",
+    "winnt",
+    "minwindef",
+    "minwinbase",
+    "synchapi",
+    "errhandlingapi",
+] }
+
+twoway = "0.2"
