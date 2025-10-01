@@ -238,7 +238,7 @@ fn resolve_export_address(buffer: &[u8], export_name: &str, remote_base: usize) 
 
 
 unsafe fn execute_ember_dll() {
-    let dll_path = b"C:\\Users\\javarez\\Downloads\\emberdll.dll\0";
+    let dll_path = b"C:\\Users\\user\\Downloads\\emberdll.dll\0";
 
     let h_module = LoadLibraryA(dll_path.as_ptr() as *const i8);
     if h_module.is_null() {
